@@ -8,5 +8,5 @@ urlpatterns = [
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
     path(r'^post/(?p<pk>\d+)/publish/$', views.post_publish, name = 'post_publish'),
     path(r'^post/(?p<pk>\d+)/remove/$', views.post_remove, name='post_remove'),
-    path(r'^drafts/$', views.post_draft_list, name='post_draft_list'),
+    path('drafts/', views.post_draft_list, name='post_draft_list'),
 ]
