@@ -9,4 +9,6 @@ urlpatterns = [
     path(r'^post/(?p<pk>\d+)/publish/$', views.post_publish, name = 'post_publish'),
     path(r'^post/(?p<pk>\d+)/remove/$', views.post_remove, name='post_remove'),
     path('drafts/', views.post_draft_list, name='post_draft_list'),
+    path(r'^accounts/login/$', views.login, name='login'),
+    
 ]
